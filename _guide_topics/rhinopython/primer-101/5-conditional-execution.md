@@ -391,7 +391,7 @@ dblTwistAngle = 0.0
 
 rs.EnableRedraw(False)
 for z in rs.frange(0.0, 5.0, 0.5):
-   dblTwistAngle = dblTwistAngle + (pi/30)
+   dblTwistAngle += (pi/30)
 
    for a in rs.frange(0.0, 2*pi, (pi/15)):
        x = 5 * math.sin(a + dblTwistAngle)
@@ -415,4 +415,4 @@ while the spheres are inserted. The script completes much faster if it doesn't h
 
 ## Next Steps
 
-Now it should be coming together on how Python works.  Just a few more details. Leanr more about Python's advanced variables in [Tuples, Lists and Dictionaries]({{ site.baseurl }}/guides/rhinopython/primer-101/6-tuples-lists-dictionaries/).
+Now it should be coming together on how Python works.  Just a few more details. Learn more about Python's advanced variables in [Tuples, Lists and Dictionaries]({{ site.baseurl }}/guides/rhinopython/primer-101/6-tuples-lists-dictionaries/).
